@@ -1,0 +1,23 @@
+#include <windows.h>
+#include "define.h"
+
+MENU_HELP DIALOG DISCARDABLE 20, 20, 405, 305
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Poradnik"
+FONT 8, "MS Sans Serif"
+{
+	
+}
+
+MENU_RESIZE DIALOG DISCARDABLE 20, 20, 205, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zmieñ rozmiar"
+FONT 10, "MS Sans Serif"
+{
+	LTEXT L"Szerokosc:", IDOK, 8, 20, 40, 33
+	LTEXT L"Wysokosc:", IDOK, 8, 50, 40, 33
+
+	
+	PUSHBUTTON L"Zmien", IDOK, 59, 83, 40, 14
+    PUSHBUTTON L"Anuluj", IDCANCEL, 107, 83, 40, 14
+}
